@@ -53,7 +53,7 @@ LOGO_STYLE = {
 
 sidebar = html.Div(
     [
-        html.Img(src="../src/img/PDPrognosis.jpeg", style=LOGO_STYLE),
+        html.Img(src="./img/PDPrognosis.jpeg", style=LOGO_STYLE),
         html.H5("PDPrognosis", className="display-4"),
         html.Hr(),
         html.P(
@@ -73,7 +73,14 @@ sidebar = html.Div(
     style=SIDEBAR_STYLE,
 )
 
-content = html.Div(id="page-content", style=CONTENT_STYLE)
+content = html.Div(
+    [
+        id="page-content",
+
+
+    ],
+    style=CONTENT_STYLE
+)
 
 app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
 
