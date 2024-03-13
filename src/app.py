@@ -30,7 +30,7 @@ SIDEBAR_STYLE = {
     "top": 0,
     "left": 0,
     "bottom": 0,
-    "width": "22rem",
+    "width": "21rem",
     "padding": "2rem 1rem",
     "background-color": "#f8f9fa",
 }
@@ -38,13 +38,19 @@ SIDEBAR_STYLE = {
 # the styles for the main content position it to the right of the sidebar and
 # add some padding.
 CONTENT_STYLE = {
-    "margin-left": "25rem",
+    "margin-left": "22rem",
     "margin-right": "2rem",
     "padding": "2rem 1rem",
 }
 
+LOGO_STYLE = {
+    "width":"10rem",
+
+}
+
 sidebar = html.Div(
     [
+        html.Img(src="./src/img/PDPrognosis.jpeg", style=LOGO_STYLE),
         html.H5("PDPrognosis", className="display-4"),
         html.Hr(),
         html.P(
