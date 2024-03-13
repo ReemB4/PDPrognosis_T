@@ -12,7 +12,10 @@
 # Run this app with `python app.py` and
 # visit http://127.0.0.1:8050/ in your web browser.
 '''
+import time
 import dash
+import numpy as np
+import plotly.graph_objs as go
 import dash_bootstrap_components as dbc
 from dash import Input, Output, dcc, html
 
@@ -50,7 +53,7 @@ LOGO_STYLE = {
 
 sidebar = html.Div(
     [
-        html.Img(src="./src/img/PDPrognosis.jpeg", style=LOGO_STYLE),
+        html.Img(src="../src/img/PDPrognosis.jpeg", style=LOGO_STYLE),
         html.H5("PDPrognosis", className="display-4"),
         html.Hr(),
         html.P(
